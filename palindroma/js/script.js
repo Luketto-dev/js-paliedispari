@@ -15,15 +15,10 @@ function isPalindroma(parola) {
     let parolaScomposta = parola.split("")
     let parolaAlContrario = "";
 
-    let palindromo = false
 
     for (let i = (parolaScomposta.length - 1); i >= 0; i--) {
 
         let lettera = parolaScomposta[i];
-
-        console.log(typeof(lettera))
-
-        console.log(i + " " + lettera)
 
         parolaAlContrario += lettera;
         
@@ -33,11 +28,13 @@ function isPalindroma(parola) {
 
     if (parolaInserita === parolaAlContrario) {
 
-        palindromo = true;
+        return true;
     
+    }else{
+        return false;
     }
 
-    return palindromo;
+    
 }
 
 

@@ -12,7 +12,7 @@ let numeroUtente = parseInt(prompt("segli un numero da 1 a 5"));
 console.log(numeroUtente)
 
 function generaNumeroRandom(min, max) {
-    result = Math.floor(Math.random() * (max - min + 1)) + min;
+    let result = Math.floor(Math.random() * (max - min + 1)) + min;
 
     return result;
 }
@@ -26,7 +26,7 @@ let sommaNumeri = numeroComputer + numeroUtente;
 
 function isPari(numero){
 
-    result = numero % 2 === 0
+    let result = numero % 2 === 0
 
     return result
 }
